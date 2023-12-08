@@ -37,9 +37,10 @@ while
         echo -e "${YELLOW}prerequisite error${NC}"
     elif echo "$response_wcs" | grep -q "again"; then
         echo -e "${BLUE}already registered${NC}"
+    elif echo "$response_wcs" | grep -q "Welcome,"; then
+        echo -e "${RED}no access${NC}"
     elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
-        echo "$response_wcs"
     elif echo "$response_wcs" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
     else
@@ -55,7 +56,9 @@ while
         echo -e "${YELLOW}prerequisite error${NC}"
     elif echo "$response_calc" | grep -q "again"; then
         echo -e "${BLUE}already registered${NC}"
-    elif echo "$response_calc" | grep -q "You are not authorized"; then
+    elif echo "$response_wcs" | grep -q "Welcome,"; then
+        echo -e "${RED}no access${NC}"
+    elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
     elif echo "$response_calc" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
@@ -72,7 +75,9 @@ while
         echo -e "${YELLOW}prerequisite error${NC}"
     elif echo "$response_discrete" | grep -q "again"; then
         echo -e "${BLUE}already registered${NC}"
-    elif echo "$response_discrete" | grep -q "You are not authorized"; then
+    elif echo "$response_wcs" | grep -q "Welcome,"; then
+        echo -e "${RED}no access${NC}"
+    elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
     elif echo "$response_discrete" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
@@ -89,7 +94,9 @@ while
         echo -e "${YELLOW}prerequisite error${NC}"
     elif echo "$response_phys" | grep -q "again"; then
         echo -e "${BLUE}already registered${NC}"
-    elif echo "$response_phys" | grep -q "You are not authorized"; then
+    elif echo "$response_wcs" | grep -q "Welcome,"; then
+        echo -e "${RED}no access${NC}"
+    elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
     elif echo "$response_phys" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
@@ -106,7 +113,9 @@ while
         echo -e "${YELLOW}prerequisite error${NC}"
     elif echo "$response_csci" | grep -q "again"; then
         echo -e "${BLUE}already registered${NC}"
-    elif echo "$response_csci" | grep -q "You are not authorized"; then
+    elif echo "$response_wcs" | grep -q "Welcome,"; then
+        echo -e "${RED}no access${NC}"
+    elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
     elif echo "$response_csci" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
