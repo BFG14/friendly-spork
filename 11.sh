@@ -39,6 +39,7 @@ while
         echo -e "${BLUE}already registered${NC}"
     elif echo "$response_wcs" | grep -q "You are not authorized"; then
         echo -e "${RED}authorization error${NC}"
+        echo "$response_wcs"
     elif echo "$response_wcs" | grep -q "is full"; then
         echo -e "${RED}FULL${NC}"
     else
